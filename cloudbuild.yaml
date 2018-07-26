@@ -3,4 +3,4 @@ options:
   machine_type: N1_HIGHCPU_8
 steps:
 - name: gcr.io/cloud-builders/bazel
-  args: ['test', '...']
+  args: ['test', '...', '--test_output=errors', '--sandbox_tmpfs_path=/tmp']
